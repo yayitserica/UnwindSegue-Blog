@@ -12,6 +12,7 @@
 		45C5D3531EEF1CD800D32E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C5D3521EEF1CD800D32E4F /* Assets.xcassets */; };
 		45C5D3561EEF1CD800D32E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C5D3541EEF1CD800D32E4F /* LaunchScreen.storyboard */; };
 		45C5D35E1EEF1D2100D32E4F /* MadMenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5D35D1EEF1D2100D32E4F /* MadMenTableViewController.swift */; };
+		45C5D3601EEF1FED00D32E4F /* AddCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5D35F1EEF1FED00D32E4F /* AddCharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45C5D3551EEF1CD800D32E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C5D3571EEF1CD800D32E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C5D35D1EEF1D2100D32E4F /* MadMenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MadMenTableViewController.swift; path = ../MadMenTableViewController.swift; sourceTree = "<group>"; };
+		45C5D35F1EEF1FED00D32E4F /* AddCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				45C5D35D1EEF1D2100D32E4F /* MadMenTableViewController.swift */,
+				45C5D35F1EEF1FED00D32E4F /* AddCharacterViewController.swift */,
 				45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */,
 				45C5D34F1EEF1CD800D32E4F /* Main.storyboard */,
 				45C5D3521EEF1CD800D32E4F /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C5D3601EEF1FED00D32E4F /* AddCharacterViewController.swift in Sources */,
 				45C5D34C1EEF1CD800D32E4F /* AppDelegate.swift in Sources */,
 				45C5D35E1EEF1D2100D32E4F /* MadMenTableViewController.swift in Sources */,
 			);

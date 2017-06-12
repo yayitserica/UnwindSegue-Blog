@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HUd-1q-5wc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mad Men Table View Controller-->
+        <!--Favorite Mad Men Characters-->
         <scene sceneID="4i9-K8-Qq7">
             <objects>
                 <tableViewController id="T1y-O9-h8o" customClass="MadMenTableViewController" customModule="UnwindSegue" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YEq-78-lhw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="madMenCell" id="YEq-78-lhw">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YEq-78-lhw" id="wLf-rQ-EWH">
@@ -32,10 +32,73 @@
                             <outlet property="delegate" destination="T1y-O9-h8o" id="qvz-IO-SgR"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Favorite Mad Men Characters" id="xhW-De-aqP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kdy-63-paj">
+                            <connections>
+                                <segue destination="lJt-gd-zfM" kind="show" identifier="toAddNewCharacter" id="5vI-Oh-a0X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w48-da-h5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="143"/>
+            <point key="canvasLocation" x="874" y="143"/>
+        </scene>
+        <!--Add a Mad Men Character-->
+        <scene sceneID="QDT-tB-bOQ">
+            <objects>
+                <viewController title="Add a Mad Men Character" id="lJt-gd-zfM" customClass="AddCharacterViewController" customModule="UnwindSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gkd-kL-IVD"/>
+                        <viewControllerLayoutGuide type="bottom" id="GDB-Ey-o7T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="McL-Qk-L5D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter a character." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVV-2K-7RR">
+                                <rect key="frame" x="16" y="233" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add a Mad Men Character" id="j6R-Du-r1I">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="bua-Op-nBP">
+                            <connections>
+                                <segue destination="AYI-HP-NRu" kind="unwind" unwindAction="unwindFromAddVC:" id="Exj-s3-h17"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="characterTextField" destination="KVV-2K-7RR" id="wKQ-gW-XXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fu-d0-CAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AYI-HP-NRu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rbB-Kr-vi1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HUd-1q-5wc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r9R-aP-y4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T1y-O9-h8o" kind="relationship" relationship="rootViewController" id="5aI-xc-22c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mz-re-VYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.400000000000006" y="142.57871064467767"/>
         </scene>
     </scenes>
 </document>
