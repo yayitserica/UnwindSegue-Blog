@@ -56,11 +56,11 @@
 		45C5D34A1EEF1CD800D32E4F /* UnwindSegue */ = {
 			isa = PBXGroup;
 			children = (
+				45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */,
 				45C5D35D1EEF1D2100D32E4F /* MadMenTableViewController.swift */,
 				45C5D35F1EEF1FED00D32E4F /* AddCharacterViewController.swift */,
-				45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */,
-				45C5D34F1EEF1CD800D32E4F /* Main.storyboard */,
 				45C5D3521EEF1CD800D32E4F /* Assets.xcassets */,
+				45C5D34F1EEF1CD800D32E4F /* Main.storyboard */,
 				45C5D3541EEF1CD800D32E4F /* LaunchScreen.storyboard */,
 				45C5D3571EEF1CD800D32E4F /* Info.plist */,
 			);
