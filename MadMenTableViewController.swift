@@ -9,6 +9,8 @@
 import UIKit
 
 class MadMenTableViewController: UITableViewController {
+    
+    var madMenCharacters: [String] = ["Joan Holloway", "Don Draper", "Roger Sterling", "Bertram Cooper", "Pete Campbell", "Peggy Olson"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +20,6 @@ class MadMenTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
