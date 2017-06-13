@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YEq-78-lhw" id="wLf-rQ-EWH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -62,11 +62,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who's your favorite?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zer-GM-Acc">
+                                <rect key="frame" x="109" y="277.5" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KVV-2K-7RR" firstAttribute="centerX" secondItem="McL-Qk-L5D" secondAttribute="centerX" id="1LD-H5-iZF"/>
                             <constraint firstItem="KVV-2K-7RR" firstAttribute="centerY" secondItem="McL-Qk-L5D" secondAttribute="centerY" id="HpD-56-Wbt"/>
+                            <constraint firstItem="KVV-2K-7RR" firstAttribute="top" secondItem="zer-GM-Acc" secondAttribute="bottom" constant="20" id="fNa-6q-28g"/>
+                            <constraint firstItem="zer-GM-Acc" firstAttribute="centerX" secondItem="McL-Qk-L5D" secondAttribute="centerX" id="qfu-M8-QaG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Mad Men Character" id="j6R-Du-r1I">
