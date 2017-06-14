@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45132BF81EF0A74C00FB80A6 /* Character.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45132BF61EF0A74C00FB80A6 /* Character.xcdatamodeld */; };
 		45C5D34C1EEF1CD800D32E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */; };
 		45C5D3511EEF1CD800D32E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C5D34F1EEF1CD800D32E4F /* Main.storyboard */; };
 		45C5D3531EEF1CD800D32E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C5D3521EEF1CD800D32E4F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45132BF71EF0A74C00FB80A6 /* Character.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Character.xcdatamodel; sourceTree = "<group>"; };
 		45C5D3481EEF1CD800D32E4F /* UnwindSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnwindSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C5D3501EEF1CD800D32E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				45C5D34B1EEF1CD800D32E4F /* AppDelegate.swift */,
 				45C5D35D1EEF1D2100D32E4F /* MadMenTableViewController.swift */,
+				45132BF61EF0A74C00FB80A6 /* Character.xcdatamodeld */,
 				45C5D35F1EEF1FED00D32E4F /* AddCharacterViewController.swift */,
 				45C5D3521EEF1CD800D32E4F /* Assets.xcassets */,
 				45C5D34F1EEF1CD800D32E4F /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				45C5D3601EEF1FED00D32E4F /* AddCharacterViewController.swift in Sources */,
 				45C5D34C1EEF1CD800D32E4F /* AppDelegate.swift in Sources */,
 				45C5D35E1EEF1D2100D32E4F /* MadMenTableViewController.swift in Sources */,
+				45132BF81EF0A74C00FB80A6 /* Character.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +312,22 @@
 				45C5D35C1EEF1CD800D32E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45132BF61EF0A74C00FB80A6 /* Character.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45132BF71EF0A74C00FB80A6 /* Character.xcdatamodel */,
+			);
+			currentVersion = 45132BF71EF0A74C00FB80A6 /* Character.xcdatamodel */;
+			path = Character.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45C5D3401EEF1CD800D32E4F /* Project object */;
 }
